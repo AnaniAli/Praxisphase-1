@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reise App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-300 to-blue-100 flex justify-center items-center min-h-screen p-6">
+    
+    <div class="flex gap-6 max-w-5xl w-[950px] h-[800px]">
+        <div class="w-[400px] bg-white rounded-[70px] shadow-xl overflow-hidden p-6">
+            <img src="Bild1.jpg" alt="Handybild" class="w-full h-full object-cover rounded-[50px]">
+            
+            <div class="flex justify-around mt-[-60px]">
+                <button class="bg-gray-200 p-5 rounded-full shadow-md hover:bg-gray-300 ml-2">
+                    ❤️
+                </button>
+                <button class="bg-gray-200 p-5 rounded-full shadow-md hover:bg-gray-300 ml-">
+                    🔊
+                </button>
+                <button class="bg-green-500 text-white px-14 py-2 rounded-full shadow-md hover:bg-green-600 mr-[-10px]">
+                    BOOK NOW
+                </button>
+            </div>
+        </div>
+
+        <div class="w-[450px] h-[800px] bg-white rounded-[55px] shadow-xl p-8 mt-16 ml-10 relative">
+            <button class="absolute top-6 left-4 text-black text-2xl font-bold">
+                ←
+            </button>
+            <button class="absolute top-6 right-8 text-black text-2xl font-bold">
+                &#8226; &#8226; &#8226;
+            </button>
+            <h2 class="text-2xl font-extrabold text-black mt-12">Discover <span class="text-black font-normal">new adventures</span></h2>
+            <p class="text-gray-600 text-base mb-6">More than 50 new adventures</p>
+            
+            <div class="space-y-6">
+                <div class="relative">
+                    <img src="Bild2.jpg" alt="Bali, Indonesia" class="w-[450px] h-48 object-cover rounded-xl">
+                    <button class="absolute inset-0 bg-transparent hover:bg-black/20 text-white font-bold rounded-xl"></button>
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-black text-xl px-4 py-2 rounded-md">
+                        <span class="font-bold">Bali</span>, Indonesia
+                    </span>
+                </div>
+                
+                <div class="relative">
+                    <img src="Bild3.jpg" alt="Loire Valley, France" class="w-[450px] h-48 object-cover rounded-xl">
+                    <button class="absolute inset-0 bg-transparent hover:bg-black/20 text-white font-bold rounded-xl"></button>
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-black text-xl px-4 py-2 rounded-md whitespace-nowrap">
+                        <span class="font-bold">Loire Valley</span>, France
+                    </span>
+                </div>
+                
+                <div class="relative">
+                    <img src="Bild4.jpg" alt="Tiputini River, Ecuador" class="w-[450px] h-48 object-cover rounded-xl">
+                    <button class="absolute inset-0 bg-transparent hover:bg-black/20 text-white font-bold rounded-xl"></button>
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-black text-xl px-4 py-2 rounded-md whitespace-nowrap">
+                        <span class="font-bold">Tiputini River</span>, Ecuador
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
