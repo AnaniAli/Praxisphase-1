@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>View Options</title>
+</head>
+<body class="bg-gray-900 flex items-start justify-center min-h-screen gap-6 pt-10">
+    <!-- Linker Container -->
+    <div class="bg-gray-800 p-6 rounded-lg w-72 relative">
+        <div class="flex justify-between items-center mb-2 pb-2">
+            <h2 class="text-gray-400 text-sm">VIEW OPTIONS</h2>
+            <div class="flex gap-2">
+                <button class="text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pin"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></svg>
+                </button>
+                <button class="text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>                      
+                </button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Point Cloud</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Point Size</span>
+                <input type="range" class="w-24" value="9" max="10">
+                <span class="text-white">9</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Coordinate frames</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>                  
+            </button>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">CAD matches</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>                  
+            </button>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Grasps</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>                  
+            </button>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4">
+                <p class="text-white">Gripper</p>
+                <button class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  </button>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-600">Returned</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 pb-2">
+                <span class="text-gray-600">Additional</span>
+                <div>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Show</button>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Load Carrier</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>                  
+            </button>
+        </div>
+        <button class="bg-gray-700 text-white w-full py-2 rounded">Reset View</button>
+    </div>
+    
+    <!-- Rechter Container -->
+    <div class="bg-gray-800 p-6 rounded-lg w-80 relative">
+        <div class="flex justify-between items-center mb-2 pb-2">
+            <h2 class="text-gray-400 text-sm">VIEW OPTIONS</h2>
+            <div class="flex gap-2">
+                <button class="text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pin"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></svg>
+                </button>
+                <button class="text-gray-400">✖</button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Point cloud</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Point Size</span>
+                <input type="range" class="w-32" value="2" max="10">
+                <span class="text-white">2</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Coordinate frames</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>                  
+            </button>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4">
+            <p class="text-white">CAD matches</p> 
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+            </button> 
+        </div>
+        <div class="flex justify-between">
+            <span class="text-gray-600">Returned</span>
+            <div>
+                <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+            </div>
+        </div>
+        <div class="flex justify-between border-b border-gray-600 mt-2 pb-4">
+            <span class="text-gray-600">Additional</span>
+            <div>
+                <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Show</button>
+                <button class="bg-blue-600 text-white px-2 py-1 rounded">Hide</button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4 mt-4">
+            <p class="text-white">Grasps</p>
+            <button class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>                  
+            </button>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-600">Valid grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Valid grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Colliding grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Gripper</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Animation Speed</span>
+                <input type="range" class="w-24" value="2" max="10">
+                <span class="text-white">2</span>
+            </div>
+        </div>
+        <div class="mb-4 pb-2">
+            <p class="text-white">Load Carrier</p>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Wireframe</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <button class="bg-gray-700 text-white w-full py-2 rounded">Reset View</button>
+    </div>
+</body>
+</html>
