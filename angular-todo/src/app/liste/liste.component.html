@@ -1,0 +1,20 @@
+<div class="liste-container">
+  <div class="controls">
+      <input type="text" #newElement placeholder="Neues Element hinzufügen" class="input-field">
+      <div class="buttons">
+          <button (click)="addElement(newElement.value)" class="btn">Hinzufügen</button>
+          <button (click)="delLastElement()" class="btn">Letztes Element entfernen</button>
+          <button (click)="clear()" class="btn">Liste leeren</button>
+          <button (click)="checkAll()" class="btn">Alle auswählen</button>
+      </div>
+  </div>
+
+  <div class="liste">
+      <ul>
+          <li *ngFor="let item of items" [ngClass]="{ 'checked': item.checked }">
+              <input type="checkbox" [(ngModel)]="item.checked" class="checkbox">
+              <span class="item-text">{{ item.name }}</span>
+          </li>
+      </ul>
+  </div>
+</div>
